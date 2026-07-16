@@ -411,7 +411,7 @@ export default function About() {
             return (
               <div
                 key={idx}
-                className={`focus-row group/row border border-white/8 hover:bg-white/[0.04] rounded-[2rem] p-6 md:p-10 flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12 transition-all duration-500 relative overflow-hidden ${area.borderAccent}`}
+                className={`focus-row group/row bg-white/[0.04] hover:bg-white/[0.07] border border-white/15 hover:border-white/25 rounded-[2rem] p-6 md:p-10 flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12 transition-all duration-500 relative overflow-hidden ${area.borderAccent}`}
               >
                 {/* Top accent strip on hover */}
                 <div className="absolute top-0 left-0 h-[2px] w-0 group-hover/row:w-full transition-all duration-700 rounded-full" style={{ backgroundColor: area.accentColor, boxShadow: `0 0 12px ${area.accentColor}` }} />
@@ -424,13 +424,13 @@ export default function About() {
                 {/* Text content */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black text-white/35">{area.label}</span>
-                    <span className="text-[9px] font-mono text-white/20">// {area.num}</span>
+                    <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black text-white/55">{area.label}</span>
+                    <span className="text-[9px] font-mono text-white/40">// {area.num}</span>
                   </div>
                   <h4 className={`text-xl md:text-2xl lg:text-3xl font-black tracking-tight mb-4 transition-colors duration-300 ${area.accentClass} group-hover/row:opacity-100`}>
                     {area.title}
                   </h4>
-                  <p className="text-white/70 text-base md:text-lg font-light leading-relaxed">
+                  <p className="text-white/90 text-base md:text-lg font-light leading-relaxed">
                     {area.paragraph}
                   </p>
                 </div>
