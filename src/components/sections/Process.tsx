@@ -66,7 +66,7 @@ export default function Process() {
 
   return (
     <section ref={containerRef} className="relative w-full min-h-screen py-20 lg:py-32 px-6 md:px-24 flex flex-col justify-center overflow-hidden">
-      <div className="max-w-6xl mx-auto w-full glass-card p-8 md:p-16 lg:p-20 border border-white/15 relative group">
+      <div className="max-w-6xl mx-auto w-full glass-card bg-white/[0.08] p-8 md:p-16 lg:p-20 border border-white/20 relative group">
         {/* Ambient Glow inside card */}
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-glow-gold/10 blur-[100px] rounded-full group-hover:bg-glow-gold/20 transition-colors duration-1000 pointer-events-none" />
         
@@ -84,7 +84,7 @@ export default function Process() {
                 <div className="absolute w-5 h-5 rounded-full bg-background border-[3px] border-white/30 -left-[34px] md:-left-[90px] top-12 group-hover:border-glow-cyan group-hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300 z-10" />
                 
                 {/* Timeline Content Item */}
-                <div className="bg-white/[0.06] border border-white/10 p-8 md:p-12 rounded-[2rem] pop-hover glow-border transition-all duration-300 relative overflow-hidden group/item">
+                <div className="bg-white/[0.12] border border-white/20 p-8 md:p-12 rounded-[2rem] pop-hover glow-border transition-all duration-300 relative overflow-hidden group/item">
                   <div className="absolute inset-0 bg-gradient-to-br from-white/[0.02] to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-500" />
                   
                   <div className="relative z-10">

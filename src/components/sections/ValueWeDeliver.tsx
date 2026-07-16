@@ -343,7 +343,7 @@ export default function ValueWeDeliver() {
             AI Solutions <br className="hidden sm:inline" />
             That Work <span className="text-glow underline decoration-glow-cyan/50 underline-offset-[12px]">While You Sleep</span>.
           </h2>
-          <p className="text-lg md:text-2xl text-white/80 font-light max-w-xl leading-relaxed mt-6">
+          <p className="text-lg md:text-2xl text-white font-light max-w-xl leading-relaxed mt-6">
             Autonomous growth machinery and intelligent process scaling built directly into your company’s workflow.
           </p>
         </div>
@@ -368,7 +368,7 @@ export default function ValueWeDeliver() {
             return (
               <div 
                 key={pillar.id}
-                className="pillar-card group glass-card p-8 md:p-16 border border-white/15 relative overflow-hidden flex flex-col lg:flex-row gap-10 items-stretch transition-all duration-500 hover:border-white/25"
+                className="pillar-card group glass-card bg-white/[0.08] hover:bg-white/[0.14] p-8 md:p-16 border border-white/20 hover:border-white/35 relative overflow-hidden flex flex-col lg:flex-row gap-10 items-stretch transition-all duration-500"
               >
                 {/* Visual Ambient Light inside the Card */}
                 <div className={`absolute top-0 right-0 w-[400px] h-[400px] blur-[120px] rounded-full pointer-events-none transition-colors duration-1000 ${
@@ -384,7 +384,7 @@ export default function ValueWeDeliver() {
                     <h3 className="text-3xl md:text-5xl font-black tracking-tight mb-5 text-white group-hover:text-glow-gold transition-colors duration-300">
                       {pillar.title}
                     </h3>
-                    <p className="text-xl md:text-2xl text-white/85 leading-relaxed font-light mb-8">
+                    <p className="text-xl md:text-2xl text-white/95 leading-relaxed font-light mb-8">
                       {pillar.desc}
                     </p>
                   </div>
@@ -393,14 +393,14 @@ export default function ValueWeDeliver() {
                     {pillar.highlights.map((hl, i) => (
                       <div key={i} className="flex items-center gap-4">
                         <Check size={20} className={`${pillar.colorClass} shrink-0`} />
-                        <span className="text-white/90 text-base md:text-lg font-medium">{hl}</span>
+                        <span className="text-white text-base md:text-lg font-medium">{hl}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
                 {/* Right Block - Business Impact Metrics */}
-                <div className="lg:w-[400px] bg-background/80 border border-white/10 rounded-3xl p-10 flex flex-col justify-center items-center text-center relative z-10 backdrop-blur-sm shrink-0">
+                <div className="lg:w-[400px] bg-background/96 border border-white/20 rounded-3xl p-10 flex flex-col justify-center items-center text-center relative z-10 backdrop-blur-sm shrink-0">
                   <div className="absolute top-4 left-4 flex gap-1.5 items-center">
                     <Activity size={14} className={pillar.colorClass} />
                     <span className="text-[10px] uppercase tracking-[0.2em] font-black text-white/50">Real Impact</span>
@@ -435,7 +435,7 @@ export default function ValueWeDeliver() {
                   <span className={`text-5xl md:text-6xl font-black mb-4 tracking-tighter ${pillar.colorClass}`}>
                     {pillar.metric}
                   </span>
-                  <p className="text-white/85 text-base md:text-lg leading-relaxed font-light px-4">
+                  <p className="text-white/95 text-base md:text-lg leading-relaxed font-light px-4">
                     {pillar.metricDesc}
                   </p>
                 </div>
@@ -454,7 +454,7 @@ export default function ValueWeDeliver() {
             <h2 className="text-4xl md:text-6xl font-black mb-6 text-glow tracking-tighter">
               Hard Data. Unlocked Growth.
             </h2>
-            <p className="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto leading-relaxed">
               We focus strictly on engineering metrics that increase pipelines, automate support backlogs, and lower costs.
             </p>
           </div>
@@ -462,46 +462,46 @@ export default function ValueWeDeliver() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             
             {/* Stat 1 */}
-            <div className="bg-background/85 border border-white/12 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
+            <div className="bg-background/96 border border-white/20 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
               <span className="roi-val text-5xl md:text-6xl font-black text-glow-cyan tracking-tighter" data-target="99.2" data-suffix="%">
                 0%
               </span>
               <div>
                 <h4 className="font-bold text-white text-lg mb-2">Accuracy Rate</h4>
-                <p className="text-white/70 text-sm md:text-base font-light">Fine-tuned context-aware customer support agents resolving customer intents.</p>
+                <p className="text-white/90 text-sm md:text-base font-light">Fine-tuned context-aware customer support agents resolving customer intents.</p>
               </div>
             </div>
 
             {/* Stat 2 */}
-            <div className="bg-background/85 border border-white/12 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
+            <div className="bg-background/96 border border-white/20 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
               <span className="roi-val text-5xl md:text-6xl font-black text-glow-solar tracking-tighter" data-target="18000" data-integer="true" data-suffix="+">
                 0
               </span>
               <div>
                 <h4 className="font-bold text-white text-lg mb-2">Hours Saved Yearly</h4>
-                <p className="text-white/70 text-sm md:text-base font-light">Repetitive backend data entries, operations, and logs automated.</p>
+                <p className="text-white/90 text-sm md:text-base font-light">Repetitive backend data entries, operations, and logs automated.</p>
               </div>
             </div>
 
             {/* Stat 3 */}
-            <div className="bg-background/85 border border-white/12 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
+            <div className="bg-background/96 border border-white/20 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
               <span className="roi-val text-5xl md:text-6xl font-black text-glow-gold tracking-tighter" data-target="4.8" data-suffix="x">
                 0x
               </span>
               <div>
                 <h4 className="font-bold text-white text-lg mb-2">Pipeline Increase</h4>
-                <p className="text-white/70 text-sm md:text-base font-light">Meeting booking frequency scaling with autonomous cold outbound outreach.</p>
+                <p className="text-white/90 text-sm md:text-base font-light">Meeting booking frequency scaling with autonomous cold outbound outreach.</p>
               </div>
             </div>
 
             {/* Stat 4 */}
-            <div className="bg-background/85 border border-white/12 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
+            <div className="bg-background/96 border border-white/20 p-10 rounded-3xl text-center flex flex-col items-center gap-5 pop-hover glow-border backdrop-blur-md">
               <span className="roi-val text-5xl md:text-6xl font-black text-glow-cyan tracking-tighter" data-target="75" data-integer="true" data-suffix="%">
                 0%
               </span>
               <div>
                 <h4 className="font-bold text-white text-lg mb-2">Operational Savings</h4>
-                <p className="text-white/70 text-sm md:text-base font-light">Saved across teams by replacing boring processes with AI agents.</p>
+                <p className="text-white/90 text-sm md:text-base font-light">Saved across teams by replacing boring processes with AI agents.</p>
               </div>
             </div>
 
@@ -512,11 +512,11 @@ export default function ValueWeDeliver() {
       {/* 4. Download Blueprint CTA Section */}
       <section className="py-24 px-6 md:px-24 text-center max-w-5xl mx-auto relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-glow-cyan/5 blur-[120px] rounded-full pointer-events-none" />
-        <div className="glass-card p-12 md:p-20 border border-glow-solar/20 relative z-10 flex flex-col items-center">
+        <div className="glass-card bg-white/[0.08] hover:bg-white/[0.14] p-12 md:p-20 border border-glow-solar/35 relative z-10 flex flex-col items-center">
           <h2 className="text-3xl md:text-6xl font-black mb-6 text-glow tracking-tighter leading-tight">
             Deploy AI Growth Machinery.
           </h2>
-          <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl leading-relaxed mb-10">
+          <p className="text-lg md:text-xl text-white/95 font-light max-w-2xl leading-relaxed mb-10">
             Download our complete architectural map detailing step-by-step how to automate operations and drive sales using custom LLMs and database pipelines.
           </p>
           

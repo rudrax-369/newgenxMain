@@ -132,7 +132,7 @@ export default function HiringSolutions() {
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 text-glow tracking-tighter leading-none">
             Tailored <br className="hidden sm:inline"/> Hiring Solutions.
           </h2>
-          <p className="text-lg md:text-2xl text-white/80 font-light max-w-xl leading-relaxed mt-4">
+          <p className="text-lg md:text-2xl text-white font-light max-w-xl leading-relaxed mt-4">
             Connect directly with high-performance positions, or undergo specialized training to guarantee placement.
           </p>
         </div>
@@ -153,8 +153,8 @@ export default function HiringSolutions() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
           {/* Free Standard Application Card */}
-          <div className="group bg-background/90 border border-white/15 rounded-[2.5rem] p-8 md:p-14 flex flex-col justify-between gap-10 pop-hover glow-border relative overflow-hidden backdrop-blur-md">
-            <div className="absolute inset-0 bg-gradient-to-br from-glow-cyan/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          <div className="group bg-background/96 border border-white/20 rounded-[2.5rem] p-8 md:p-14 flex flex-col justify-between gap-10 pop-hover glow-border relative overflow-hidden backdrop-blur-md">
+            <div className="absolute inset-0 bg-gradient-to-br from-glow-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             
             <div className="relative z-10">
               <div className="flex justify-between items-start mb-8">
@@ -174,11 +174,11 @@ export default function HiringSolutions() {
                 FREE
               </div>
               
-              <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light mb-10">
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed font-light mb-10">
                 Apply for open roles in our network. If your existing skills and portfolio match our engineering standards, you enter our direct placement pool.
               </p>
 
-              <ul className="space-y-4 text-base md:text-lg font-light text-white/90">
+              <ul className="space-y-4 text-base md:text-lg font-light text-white">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 size={20} className="text-glow-cyan shrink-0" />
                   <span>Resume & GitHub evaluation</span>
@@ -205,8 +205,8 @@ export default function HiringSolutions() {
           </div>
 
           {/* Paid Priority Training Card */}
-          <div className="group bg-background/90 border border-glow-solar/40 rounded-[2.5rem] p-8 md:p-14 flex flex-col justify-between gap-10 pop-hover hover:border-glow-solar/60 glow-border relative overflow-hidden backdrop-blur-md shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-br from-glow-solar/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+          <div className="group bg-background/96 border border-glow-solar/60 rounded-[2.5rem] p-8 md:p-14 flex flex-col justify-between gap-10 pop-hover hover:border-glow-solar/80 glow-border relative overflow-hidden backdrop-blur-md shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-glow-solar/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
             
             <div className="relative z-10">
               <div className="flex justify-between items-start mb-8">
@@ -226,12 +226,12 @@ export default function HiringSolutions() {
                 ₹15,000 <span className="text-xs text-white/60 font-medium ml-2 uppercase tracking-wide">/ Total</span>
               </div>
               
-              <p className="text-lg md:text-xl text-high-contrast leading-relaxed mb-8">
+              <p className="text-lg md:text-xl text-white/95 leading-relaxed mb-8">
                 Targeting a <span className="text-glow-solar font-black">specific role</span>? Get 1-on-1 training and portfolio alignment built to guarantee clearance.
               </p>
 
               {/* Flexible payment sub-card */}
-              <div className="w-full p-6 bg-white/[0.08] border border-white/15 rounded-[1.5rem] flex flex-col gap-4 relative overflow-hidden mb-6">
+              <div className="w-full p-6 bg-white/[0.12] border border-white/25 rounded-[1.5rem] flex flex-col gap-4 relative overflow-hidden mb-6">
                 <div className="absolute top-0 left-0 w-1.5 h-full bg-glow-solar shadow-[0_0_15px_rgba(255,69,0,0.6)]" />
                 <h4 className="font-black tracking-[0.2em] text-white uppercase text-xs">Flexible Payment Plans:</h4>
                 <div className="space-y-3">
@@ -243,14 +243,14 @@ export default function HiringSolutions() {
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-glow-gold shadow-[0_0_8px_#ffcc00] shrink-0" />
-                    <p className="text-white/80 text-sm leading-relaxed">
+                    <p className="text-white/95 text-sm leading-relaxed">
                       <strong className="text-white font-bold">Split Approach:</strong> ₹7,500 upfront, and 50% paid only after your first salary!
                     </p>
                   </div>
                 </div>
               </div>
 
-              <ul className="space-y-4 text-base md:text-lg font-light text-white/90">
+              <ul className="space-y-4 text-base md:text-lg font-light text-white">
                 <li className="flex items-center gap-3">
                   <CheckCircle2 size={20} className="text-glow-solar shrink-0" />
                   <span>Guaranteed clearing or complete refund</span>
@@ -288,7 +288,7 @@ export default function HiringSolutions() {
             <h2 className="text-4xl md:text-6xl font-black mb-6 text-glow tracking-tighter">
               The Placement Journey
             </h2>
-            <p className="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto leading-relaxed">
               Our step-by-step engineering placement pipeline designed to take you from applicant to hired professional.
             </p>
           </div>
@@ -305,7 +305,7 @@ export default function HiringSolutions() {
                    <div className="absolute w-5 h-5 rounded-full bg-background border-[3px] border-white/30 -left-[34px] md:-left-[106px] top-6 group-hover:border-glow-cyan group-hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] transition-all duration-300 z-10" />
                   
                   {/* Timeline Card */}
-                  <div className="bg-white/[0.08] border border-white/10 p-8 rounded-[2rem] pop-hover glow-border transition-all duration-300 relative overflow-hidden flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+                  <div className="bg-white/[0.12] border border-white/20 p-8 rounded-[2rem] pop-hover glow-border transition-all duration-300 relative overflow-hidden flex flex-col md:flex-row gap-6 md:gap-8 items-start">
                     <div className={`p-4 rounded-2xl bg-white/5 border ${step.color} group-hover:scale-110 transition-transform duration-500`}>
                       <Icon size={28} />
                     </div>
@@ -316,7 +316,7 @@ export default function HiringSolutions() {
                       <h3 className="text-2xl md:text-3xl font-black tracking-tight mb-3 text-white group-hover:text-glow-gold transition-colors duration-300">
                         {step.title}
                       </h3>
-                      <p className="text-white/80 text-base md:text-lg font-light leading-relaxed max-w-3xl">
+                      <p className="text-white/95 text-base md:text-lg font-light leading-relaxed max-w-3xl">
                         {step.desc}
                       </p>
                     </div>
@@ -335,7 +335,7 @@ export default function HiringSolutions() {
           <h2 className="text-4xl md:text-6xl font-black mb-6 text-glow tracking-tighter">
             Target Industries
           </h2>
-          <p className="text-lg md:text-xl text-white/60 font-light max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto leading-relaxed">
             We source and train talents for high-growth sectors looking for elite engineering standards.
           </p>
         </div>
@@ -347,7 +347,7 @@ export default function HiringSolutions() {
             return (
               <div 
                 key={idx}
-                className="industry-card group bg-white/[0.08] border border-white/10 p-8 flex flex-col items-start gap-6 pop-hover glow-border rounded-3xl transition-all duration-300"
+                className="industry-card group bg-white/[0.12] border border-white/20 p-8 flex flex-col items-start gap-6 pop-hover glow-border rounded-3xl transition-all duration-300"
               >
                 <div className={`p-4 rounded-xl bg-white/5 border border-white/10 transition-all duration-500 group-hover:scale-110 ${
                   isEven ? 'group-hover:text-glow-cyan group-hover:border-glow-cyan/30' : 'group-hover:text-glow-solar group-hover:border-glow-solar/30'
@@ -357,7 +357,7 @@ export default function HiringSolutions() {
                 <h3 className="text-xl font-bold tracking-tight text-white group-hover:text-glow-gold transition-colors duration-300">
                   {ind.name}
                 </h3>
-                <p className="text-white/70 text-base leading-relaxed font-light">
+                <p className="text-white/90 text-base leading-relaxed font-light">
                   {ind.desc}
                 </p>
               </div>
@@ -369,11 +369,11 @@ export default function HiringSolutions() {
       {/* 5. Strong CTA Section */}
       <section className="py-24 px-6 md:px-24 text-center max-w-5xl mx-auto relative overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-glow-solar/5 blur-[120px] rounded-full pointer-events-none" />
-        <div className="glass-card p-12 md:p-20 border border-white/10 relative z-10 flex flex-col items-center">
+        <div className="glass-card bg-white/[0.08] p-12 md:p-20 border border-white/20 relative z-10 flex flex-col items-center">
           <h2 className="text-3xl md:text-6xl font-black mb-6 text-glow tracking-tighter leading-tight">
             Clear Your Target <br /> Role Today.
           </h2>
-          <p className="text-lg md:text-xl text-white/80 font-light max-w-2xl leading-relaxed mb-10">
+          <p className="text-lg md:text-xl text-white/95 font-light max-w-2xl leading-relaxed mb-10">
             Let us align your training directly with engineering metrics to bypass typical application queues.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md">

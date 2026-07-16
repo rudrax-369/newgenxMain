@@ -122,10 +122,14 @@ const focusAreas = [
     num: '01',
     label: 'AI AUTOMATION',
     title: 'AI-Powered Automation',
-    paragraph: 'We design and deploy enterprise-grade AI systems — custom Large Language Models, autonomous workflow agents, and Retrieval-Augmented Generation pipelines — trained directly on your company\'s private databases and internal documents. Your teams stop wasting hours on repetitive tasks and start operating at machine speed. Every agent we build is obsessively tuned to your specific industry context, not a generic chatbot.',
+    points: [
+      'Deploy custom LLMs and autonomous workflow agents trained on your database.',
+      'Implement RAG pipelines for secure, instant private document search.',
+      'Achieve 24/7 task execution at machine speed to eliminate manual labor.'
+    ],
     accentColor: '#00f0ff',
     accentClass: 'text-glow-cyan',
-    borderAccent: 'group-hover/row:border-glow-cyan/30',
+    borderAccent: 'group-hover/row:border-glow-cyan/35',
     svg: (
       <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Brain-circuit hybrid */}
@@ -163,10 +167,14 @@ const focusAreas = [
     num: '02',
     label: 'PROCESS OPS',
     title: 'Business Process Optimization',
-    paragraph: 'Every hour your team spends manually entering data, extracting invoice fields, or copy-pasting between systems is a direct cost to your business. We map your current workflows end-to-end, identify every friction point, and replace them with secure, silent automation pipelines that run 24/7. The result is dramatically lower operational overhead, near-zero human error rates, and freed-up talent focused on actual growth levers.',
+    points: [
+      'Map end-to-end workflows to identify and remove operational bottlenecks.',
+      'Automate invoice extraction, database logging, and data entry pipelines.',
+      'Eliminate human errors and reduce overhead costs by up to 80%.'
+    ],
     accentColor: '#ff4500',
     accentClass: 'text-glow-solar',
-    borderAccent: 'group-hover/row:border-glow-solar/30',
+    borderAccent: 'group-hover/row:border-glow-solar/35',
     svg: (
       <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Outer ambient */}
@@ -206,10 +214,14 @@ const focusAreas = [
     num: '03',
     label: 'LEAD GEN',
     title: 'Lead Generation Systems',
-    paragraph: 'We build fully automated outbound machines — scraping qualified prospect lists, running personalised cold email sequences, scoring inbound leads by conversion probability, and routing warm prospects directly into calendar booking flows. No more chasing cold leads manually. Our systems generate a compounding pipeline of sales-ready conversations while your team focuses purely on closing.',
+    points: [
+      'Scrape and verify ultra-targeted business contact databases.',
+      'Deploy multi-channel cold outreach with smart booking routers.',
+      'Build a continuous pipeline of sales-ready closing opportunities.'
+    ],
     accentColor: '#ffcc00',
     accentClass: 'text-glow-gold',
-    borderAccent: 'group-hover/row:border-glow-gold/30',
+    borderAccent: 'group-hover/row:border-glow-gold/35',
     svg: (
       <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Radar rings */}
@@ -240,10 +252,14 @@ const focusAreas = [
     num: '04',
     label: 'ENGAGEMENT',
     title: 'Customer Engagement',
-    paragraph: 'Customer support is often the biggest hidden cost in scaling businesses. We integrate intelligent conversational AI agents — trained on your product documentation, FAQs, support history, and knowledge base — that handle inquiries, escalate complex cases, and resolve tickets around the clock. Your customers get instant, accurate responses at 3am; your team only touches the cases that genuinely need human judgment.',
+    points: [
+      'Integrate 24/7 self-service AI agents to clear support queues.',
+      'Fine-tune support models using historical tickets and product documentation.',
+      'Escalate complex edge cases automatically to human agents.'
+    ],
     accentColor: '#00f0ff',
     accentClass: 'text-glow-cyan',
-    borderAccent: 'group-hover/row:border-glow-cyan/30',
+    borderAccent: 'group-hover/row:border-glow-cyan/35',
     svg: (
       <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Chat bubbles stacked */}
@@ -270,10 +286,14 @@ const focusAreas = [
     num: '05',
     label: 'INTELLIGENCE',
     title: 'Data-Driven Business Intelligence',
-    paragraph: 'Raw data sitting in your databases is dead capital. We transform your messy records, fragmented spreadsheets, and multi-source pipelines into living dashboards you can actually query in plain English. Our BI systems surface hidden cohorts, predict churn before it happens, and provide your leadership team with real-time visibility into the metrics that actually drive revenue decisions.',
+    points: [
+      'Unify messy spreadsheets and database tables into real-time metrics.',
+      'Surface predictive cohorts, retention anomalies, and revenue trends.',
+      'Enable leadership queries via intuitive natural language dashboards.'
+    ],
     accentColor: '#ff4500',
     accentClass: 'text-glow-solar',
-    borderAccent: 'group-hover/row:border-glow-solar/30',
+    borderAccent: 'group-hover/row:border-glow-solar/35',
     svg: (
       <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Axes */}
@@ -302,10 +322,14 @@ const focusAreas = [
     num: '06',
     label: 'ENGINEERING',
     title: 'Custom AI Development',
-    paragraph: 'When your business needs something that no off-the-shelf tool can provide, we build it from scratch. Full stack web and mobile applications, proprietary AI models, complex system integrations, and scalable cloud architectures — designed for horizontal scaling from day one. We are not a code shop that hands off a static deliverable; we are an engineering partner that builds living systems that grow with your business.',
+    points: [
+      'Build performant, secure web and mobile applications from scratch.',
+      'Integrate complex custom APIs and high-availability cloud setups.',
+      'Engage as an engineering partner building long-term scalable tech.'
+    ],
     accentColor: '#ffcc00',
     accentClass: 'text-glow-gold',
-    borderAccent: 'group-hover/row:border-glow-gold/30',
+    borderAccent: 'group-hover/row:border-glow-gold/35',
     svg: (
       <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
         {/* Outer grid squares */}
@@ -383,11 +407,11 @@ export default function About() {
               </div>
             </div>
             <div className="w-full lg:w-1/2 text-left flex flex-col items-start gap-6">
-              <p className="text-xl md:text-2xl text-white/90 font-light leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/95 font-light leading-relaxed">
                 At NewGenX, we don't just build software. We build intelligent systems that increase efficiency, reduce costs, improve customer experiences, and create measurable business growth.
               </p>
               <div className="w-full h-px bg-gradient-to-r from-white/15 to-transparent my-2" />
-              <p className="text-base md:text-lg text-white/70 font-light leading-relaxed">
+              <p className="text-base md:text-lg text-white/90 font-light leading-relaxed">
                 We believe technology should solve business problems—not create new ones. Our mission is simple: <strong className="text-glow-gold font-bold">Deliver measurable business outcomes through AI and automation.</strong>
               </p>
             </div>
@@ -399,7 +423,7 @@ export default function About() {
           <h3 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-4">
             Our Focus Areas
           </h3>
-          <p className="text-lg text-white/50 font-light max-w-2xl mx-auto">
+          <p className="text-lg text-white/70 font-light max-w-2xl mx-auto">
             We architect end-to-end growth frameworks and product architectures that drive direct bottom-line impact.
           </p>
         </div>
@@ -411,36 +435,39 @@ export default function About() {
             return (
               <div
                 key={idx}
-                className={`focus-row group/row bg-white/[0.04] hover:bg-white/[0.07] border border-white/15 hover:border-white/25 rounded-[2rem] p-6 md:p-10 flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12 transition-all duration-500 relative overflow-hidden ${area.borderAccent}`}
+                className={`focus-row group/row bg-white/[0.08] hover:bg-white/[0.14] border border-white/20 hover:border-white/35 rounded-[2rem] p-6 md:p-10 flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-12 transition-all duration-500 relative overflow-hidden ${area.borderAccent}`}
               >
                 {/* Top accent strip on hover */}
                 <div className="absolute top-0 left-0 h-[2px] w-0 group-hover/row:w-full transition-all duration-700 rounded-full" style={{ backgroundColor: area.accentColor, boxShadow: `0 0 12px ${area.accentColor}` }} />
 
                 {/* SVG illustration — mid size */}
-                <div className="w-28 h-28 md:w-40 md:h-40 shrink-0 opacity-80 group-hover/row:opacity-100 group-hover/row:scale-105 transition-all duration-500">
+                <div className="w-28 h-28 md:w-40 md:h-40 shrink-0 opacity-85 group-hover/row:opacity-100 group-hover/row:scale-105 transition-all duration-500">
                   {area.svg}
                 </div>
 
                 {/* Text content */}
-                <div className="flex-1 min-w-0">
+                <div className="flex-1 min-w-0 w-full text-left">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black text-white/55">{area.label}</span>
                     <span className="text-[9px] font-mono text-white/40">// {area.num}</span>
                   </div>
-                  <h4 className={`text-xl md:text-2xl lg:text-3xl font-black tracking-tight mb-4 transition-colors duration-300 ${area.accentClass} group-hover/row:opacity-100`}>
+                  <h4 className={`text-xl md:text-2xl lg:text-3xl font-black tracking-tight mb-4 transition-colors duration-300 ${area.accentClass}`}>
                     {area.title}
                   </h4>
-                  <p className="text-white/90 text-base md:text-lg font-light leading-relaxed">
-                    {area.paragraph}
-                  </p>
+                  <ul className="flex flex-col gap-2.5">
+                    {area.points.map((pt, pIdx) => (
+                      <li key={pIdx} className="flex items-start gap-2.5 text-white/95 text-base md:text-lg font-light leading-relaxed">
+                        <span className="w-1.5 h-1.5 rounded-full mt-2.5 shrink-0" style={{ backgroundColor: area.accentColor }} />
+                        <span>{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             );
           })}
         </div>
-
       </div>
     </section>
   );
 }
-

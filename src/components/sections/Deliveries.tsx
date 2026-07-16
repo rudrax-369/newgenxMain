@@ -55,7 +55,7 @@ export default function Deliveries() {
 
   return (
     <section ref={containerRef} className="relative w-full py-20 lg:py-32 px-6 md:px-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto w-full glass-card p-8 md:p-16 lg:p-20 border border-white/15 relative group">
+      <div className="max-w-7xl mx-auto w-full glass-card bg-white/[0.08] p-8 md:p-16 lg:p-20 border border-white/20 relative group">
         {/* Ambient Glow inside card */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-glow-cyan/5 blur-[120px] rounded-full group-hover:bg-glow-cyan/10 transition-colors duration-1000 pointer-events-none" />
         
@@ -73,7 +73,7 @@ export default function Deliveries() {
             const isEven = idx % 2 === 0;
             const accentClass = isEven ? 'text-glow-cyan' : 'text-glow-solar';
             const bgAccentClass = isEven ? 'bg-glow-cyan/10' : 'bg-glow-solar/10';
-            const borderAccentClass = isEven ? 'border-white/5 group-hover:border-glow-cyan/30' : 'border-white/5 group-hover:border-glow-solar/30';
+            const borderAccentClass = isEven ? 'border-white/20 group-hover:border-glow-cyan/30' : 'border-white/20 group-hover:border-glow-solar/30';
 
             return (
               <a 
@@ -81,7 +81,7 @@ export default function Deliveries() {
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
-                className={`delivery-card group bg-white/[0.07] p-10 md:p-12 flex flex-col gap-8 pop-hover grow-border relative overflow-hidden rounded-[2rem] border ${borderAccentClass}`}
+                className={`delivery-card group bg-white/[0.12] p-10 md:p-12 flex flex-col gap-8 pop-hover grow-border relative overflow-hidden rounded-[2rem] border ${borderAccentClass}`}
               >
                 <div className="flex justify-between items-start relative z-10">
                   <div className={`p-4 rounded-2xl ${bgAccentClass} ${accentClass} border border-white/10 shadow-inner`}>
