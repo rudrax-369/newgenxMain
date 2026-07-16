@@ -11,6 +11,7 @@ import Services from './components/sections/Services';
 import Process from './components/sections/Process';
 import Deliveries from './components/sections/Deliveries';
 import Contact from './components/sections/Contact';
+import BackedBy from './components/sections/BackedBy';
 
 // Lazy load heavy components for better initial load performance
 const Scene = lazy(() => import('./three/Scene'));
@@ -108,6 +109,7 @@ function App() {
                 <div id="services"><Services /></div>
                 <div id="projects"><Process /></div>
                 <div id="deliveries"><Deliveries /></div>
+                <BackedBy />
               </>
             )}
 
