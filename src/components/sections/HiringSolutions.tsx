@@ -140,7 +140,7 @@ export default function HiringSolutions() {
           <div className="absolute inset-0 bg-gradient-to-tr from-glow-cyan/10 to-glow-solar/10 blur-2xl rounded-[2.5rem] opacity-75 group-hover:opacity-100 transition-opacity duration-1000" />
           <div className="relative border border-white/10 rounded-[2.5rem] p-4 bg-background/50 backdrop-blur-xl max-w-[500px] w-full overflow-hidden shadow-2xl pop-hover">
             <img 
-              src="/newgenx/hiring_hero.png" 
+              src="/newgenxMain/hiring_hero.png" 
               alt="Hiring Solutions Vector Illustration" 
               className="w-full h-auto rounded-[2rem] object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-500 max-h-[350px] md:max-h-[450px]"
             />

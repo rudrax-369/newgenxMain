@@ -21,7 +21,7 @@ const ValueWeDeliver = lazy(() => import('./components/sections/ValueWeDeliver')
 gsap.registerPlugin(ScrollTrigger);
 
 // The Vite base path — must match vite.config.ts `base`
-const BASE = '/newgenx';
+const BASE = '/newgenxMain';
 
 // Strips the base prefix so we get a clean route like '/', '/hiring-solutions' etc.
 function getRoute(): string {

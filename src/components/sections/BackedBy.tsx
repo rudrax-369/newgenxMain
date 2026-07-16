@@ -74,7 +74,7 @@ export default function BackedBy() {
               {/* Official WFC Logo image */}
               <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-3xl overflow-hidden border border-white/20 bg-white/[0.12] backdrop-blur-md flex items-center justify-center p-5 group-hover:border-[#ff6b35]/30 transition-colors duration-500">
                 <img
-                  src="/newgenx/wfc_logo.png"
+                  src="/newgenxMain/wfc_logo.png"
                   alt="We Founder Circle Logo"
                   className="w-full h-full object-contain"
                 />

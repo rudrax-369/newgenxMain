@@ -323,7 +323,7 @@ export default function ValueWeDeliver() {
 
   const handleDirectDownload = () => {
     const link = document.createElement('a');
-    link.href = '/newgenx/free_pdf.pdf';
+    link.href = '/newgenxMain/free_pdf.pdf';
     link.setAttribute('download', 'AI_Growth_Blueprint_NewGenX.pdf');
     document.body.appendChild(link);
     link.click();
@@ -351,7 +351,7 @@ export default function ValueWeDeliver() {
           <div className="absolute inset-0 bg-gradient-to-tr from-glow-solar/10 to-glow-gold/10 blur-2xl rounded-[2.5rem] opacity-75 group-hover:opacity-100 transition-opacity duration-1000" />
           <div className="relative border border-white/10 rounded-[2.5rem] p-4 bg-background/50 backdrop-blur-xl max-w-[500px] w-full overflow-hidden shadow-2xl pop-hover">
             <img 
-              src="/newgenx/value_hero.png" 
+              src="/newgenxMain/value_hero.png" 
               alt="Value We Deliver Vector Illustration" 
               className="w-full h-auto rounded-[2rem] object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-500 max-h-[350px] md:max-h-[450px]"
             />

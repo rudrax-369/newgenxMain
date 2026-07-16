@@ -1,4 +1,5 @@
-const BASE = '/newgenx';
+const BASE = '/newgenxMain';
+
 
 export const navigate = (path: string) => {
   // Prepend base so the URL stays correct (e.g. '/newgenx/hiring-solutions')
