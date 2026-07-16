@@ -391,7 +391,7 @@ export default function About() {
         {/* 1. Centered Intro Header */}
         <div className="about-intro relative z-10 flex flex-col gap-12 lg:gap-16 mb-24">
           <div className="text-center flex flex-col items-center gap-4">
-            <span className="text-[10px] md:text-xs uppercase tracking-[0.3em] font-black bg-glow-solar/10 text-glow-solar px-4 py-2 rounded-full border border-glow-solar/20 inline-block">
+            <span className="text-sm md:text-base uppercase tracking-[0.3em] font-black bg-glow-solar/15 text-glow-solar px-6 py-2.5 rounded-full border border-glow-solar/35 inline-block shadow-[0_0_15px_rgba(255,69,0,0.25)]">
               About NewGenX
             </span>
             <h2 className="text-4xl md:text-6xl font-black text-glow tracking-tighter leading-none">
