@@ -105,11 +105,11 @@ function App() {
             {isHome && (
               <>
                 <Hero />
+                <BackedBy />
                 <div id="about"><About /></div>
                 <div id="services"><Services /></div>
                 <div id="projects"><Process /></div>
                 <div id="deliveries"><Deliveries /></div>
-                <BackedBy />
               </>
             )}
 
