@@ -59,7 +59,7 @@ export default function BackedBy() {
           href="https://wefoundercircle.com/"
           target="_blank"
           rel="noreferrer"
-          className="backedby-card group block glass-card border border-white/10 hover:border-[#ff6b35]/40 rounded-[2.5rem] overflow-hidden transition-all duration-700 hover:shadow-[0_0_80px_rgba(255,107,53,0.15)] cursor-pointer"
+          className="backedby-card group block glass-card bg-white/[0.08] hover:bg-white/[0.14] border border-white/20 hover:border-[#ff6b35]/40 rounded-[2.5rem] overflow-hidden transition-all duration-700 hover:shadow-[0_0_80px_rgba(255,107,53,0.15)] cursor-pointer"
         >
           {/* Gradient top bar */}
           <div className="h-1 w-full bg-gradient-to-r from-[#ff6b35] via-[#ff9357] to-[#ff6b35]" />
@@ -72,7 +72,7 @@ export default function BackedBy() {
             {/* LEFT: WFC logo image + No.1 badge */}
             <div className="w-full lg:w-[320px] shrink-0 flex flex-col items-center gap-6">
               {/* Official WFC Logo image */}
-              <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md flex items-center justify-center p-5 group-hover:border-[#ff6b35]/30 transition-colors duration-500">
+              <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-3xl overflow-hidden border border-white/20 bg-white/[0.12] backdrop-blur-md flex items-center justify-center p-5 group-hover:border-[#ff6b35]/30 transition-colors duration-500">
                 <img
                   src="/newgenx/wfc_logo.png"
                   alt="We Founder Circle Logo"
@@ -115,7 +115,7 @@ export default function BackedBy() {
                   { val: '120+',    label: 'Funded Portfolio' },
                   { val: '6,000+', label: 'Startups Evaluated' },
                 ].map((stat, i) => (
-                  <div key={i} className="border border-white/12 rounded-2xl p-4 md:p-5 flex flex-col items-center gap-1.5 group-hover:border-[#ff6b35]/25 transition-colors duration-500 bg-white/[0.03]">
+                  <div key={i} className="border border-white/20 rounded-2xl p-4 md:p-5 flex flex-col items-center gap-1.5 group-hover:border-[#ff6b35]/25 transition-colors duration-500 bg-white/[0.08]">
                     <span className="text-2xl md:text-3xl font-black text-[#ff6b35]">{stat.val}</span>
                     <span className="text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-white/55 font-bold text-center leading-tight">{stat.label}</span>
                   </div>

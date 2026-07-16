@@ -42,7 +42,7 @@ ${message}`;
 
   return (
     <section className="relative w-full py-20 lg:py-32 px-6 md:px-24 mb-20 overflow-hidden">
-      <div className="max-w-6xl mx-auto w-full glass-card p-8 md:p-16 border border-white/15 relative group">
+      <div className="max-w-6xl mx-auto w-full glass-card bg-white/[0.08] p-8 md:p-16 border border-white/20 relative group">
         {/* Ambient Glow inside card */}
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-glow-solar/5 blur-[120px] rounded-full group-hover:bg-glow-solar/10 transition-colors duration-1000 pointer-events-none" />
         
@@ -56,7 +56,7 @@ ${message}`;
                 <span className="text-glow underline decoration-glow-cyan/50 underline-offset-[12px]">Together</span>.
               </h2>
               
-              <p className="text-base md:text-lg text-white/80 leading-relaxed font-light mb-10">
+              <p className="text-base md:text-lg text-white/95 leading-relaxed font-light mb-10">
                 Whether you're looking to build a <span className="text-glow-cyan font-semibold">new product</span>, optimize your <span className="text-glow-solar font-semibold">growth funnel</span>, or scale your <span className="text-glow-cyan font-semibold">engineering team</span>—we're ready to help you hit the next peak.
               </p>
             </div>
@@ -69,7 +69,7 @@ ${message}`;
                   href="https://wa.me/917303686363" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="p-4 bg-white/5 border border-white/10 hover:border-glow-cyan/30 rounded-2xl text-white hover:text-glow-cyan transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold shadow-inner"
+                  className="p-4 bg-white/[0.12] border border-white/20 hover:border-glow-cyan/30 rounded-2xl text-white hover:text-glow-cyan transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold shadow-inner"
                 >
                   <MessageSquare size={16} /> WhatsApp
                 </a>
@@ -77,7 +77,7 @@ ${message}`;
                   href="https://www.linkedin.com/in/rudrax-chhonkar" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="p-4 bg-white/5 border border-white/10 hover:border-glow-solar/30 rounded-2xl text-white hover:text-glow-solar transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold shadow-inner"
+                  className="p-4 bg-white/[0.12] border border-white/20 hover:border-glow-solar/30 rounded-2xl text-white hover:text-glow-solar transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold shadow-inner"
                 >
                   <Linkedin size={16} /> LinkedIn
                 </a>
@@ -85,7 +85,7 @@ ${message}`;
                   href="https://www.instagram.com/rudrax__singh/" 
                   target="_blank" 
                   rel="noreferrer"
-                  className="p-4 bg-white/5 border border-white/10 hover:border-white/20 rounded-2xl text-white hover:text-glow-gold transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold shadow-inner"
+                  className="p-4 bg-white/[0.12] border border-white/20 hover:border-white/25 rounded-2xl text-white hover:text-glow-gold transition-all flex items-center justify-center gap-2 text-xs uppercase tracking-wider font-bold shadow-inner"
                 >
                   <Instagram size={16} /> Instagram
                 </a>
@@ -94,7 +94,7 @@ ${message}`;
           </div>
 
           {/* Right Column: Sleek Contact Form */}
-          <div className="lg:col-span-7 w-full bg-background/40 border border-white/10 p-6 md:p-10 rounded-[2.5rem] shadow-2xl relative backdrop-blur-md">
+          <div className="lg:col-span-7 w-full bg-background/96 border border-white/20 p-6 md:p-10 rounded-[2.5rem] shadow-2xl relative backdrop-blur-md">
             <form onSubmit={handleSubmit} className="space-y-6">
               
               {/* Name Field */}

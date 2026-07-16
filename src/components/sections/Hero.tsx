@@ -25,7 +25,7 @@ export default function Hero() {
         <OrbitalRings />
       </div>
 
-      <div className="hero-text z-10 flex flex-col items-start mt-10 md:mt-20 pointer-events-auto max-w-6xl w-full glass-card p-6 md:p-12 lg:p-20 relative text-left border border-white/10 group">
+      <div className="hero-text z-10 flex flex-col items-start mt-10 md:mt-20 pointer-events-auto max-w-6xl w-full glass-card bg-white/[0.08] hover:bg-white/[0.12] p-6 md:p-12 lg:p-20 relative text-left border border-white/20 group">
         {/* Ambient Glow inside card */}
         <div className="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-glow-cyan/5 blur-[80px] md:blur-[100px] rounded-full group-hover:bg-glow-cyan/10 transition-colors duration-1000 pointer-events-none" />
 
