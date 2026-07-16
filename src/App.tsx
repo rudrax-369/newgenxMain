@@ -7,7 +7,7 @@ import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
-import Services from './components/sections/Services';
+
 import Process from './components/sections/Process';
 import Deliveries from './components/sections/Deliveries';
 import Contact from './components/sections/Contact';
@@ -107,7 +107,7 @@ function App() {
                 <Hero />
                 <BackedBy />
                 <div id="about"><About /></div>
-                <div id="services"><Services /></div>
+
                 <div id="projects"><Process /></div>
                 <div id="deliveries"><Deliveries /></div>
               </>
