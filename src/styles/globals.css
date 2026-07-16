@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --glow-cyan: #00f0ff;
+    --glow-solar: #ff4500;
+    --glow-gold: #ffcc00;
+  }
+
+  /* Fluid Typography — scales smoothly across all viewports */
+  h1 { font-size: clamp(3rem, 9.5vw, 8.5rem); }
+  h2 { font-size: clamp(2.5rem, 7vw, 6.5rem); }
+  p  { font-size: clamp(1.15rem, 2.8vw, 1.6rem); }
+
+  body {
+    @apply bg-background text-white overscroll-none antialiased font-sans text-base;
+    letter-spacing: -0.015em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    /* Prevent layout flicker from touch momentum scroll */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Eliminate tap highlight flash on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+
+@layer utilities {
+  .glass {
+    @apply bg-surface/80 backdrop-blur-md border border-white/20;
+  }
+  
+  /* 
+    glass-card: GPU-accelerated card base.
+    - transform: translateZ(0) forces compositing to GPU (eliminates paint jank)
+    - isolation: isolate prevents accidental z-index bleed from child elements
+    - will-change: transform tells the browser to pre-promote this layer 
+  */
+  .glass-card {
+    @apply bg-background/90 bg-gradient-to-br from-white/[0.22] to-white/[0.06] backdrop-blur-xl border border-white/15 rounded-3xl shadow-[0_8px_48px_0_rgba(0,0,0,0.95)] transition-[transform,box-shadow,border-color] duration-500 will-change-transform relative overflow-visible;
+    /* Removed translateZ and isolate to prevent text clipping on composite layers */
+  }
+
+  /* Reduce blur on mobile — backdrop-filter is the #1 GPU killer on mobile */
+  @media (max-width: 768px) {
+    .glass-card {
+      @apply backdrop-blur-md;
+    }
+    .glass {
+      @apply backdrop-blur-sm;
+    }
+  }
+
+  .glass-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-700 pointer-events-none;
+    background: radial-gradient(circle at top left, var(--glow-cyan), transparent 40%),
+                radial-gradient(circle at bottom right, var(--glow-solar), transparent 40%);
+  }
+
+  .glass-card:hover::before {
+    @apply opacity-30;
+  }
+
+  /* Only activate hover effects on devices that actually hover (not touch) */
+  @media (hover: hover) and (pointer: fine) {
+    .pop-hover:hover {
+      transform: translateY(-1rem) scale(1.03);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .pop-hover {
+    @apply transition-[transform,box-shadow] duration-500 will-change-transform;
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .glow-border {
+    @apply transition-[border-color,box-shadow] duration-300;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .glow-border:hover {
+      @apply border-glow-cyan/60 shadow-[0_0_30px_rgba(0,240,255,0.15)];
+    }
+  }
+
+  .text-glow {
+    text-shadow: 0 0 35px rgba(0, 240, 255, 0.6), 0 0 70px rgba(255, 69, 0, 0.3);
+  }
+
+  .text-glow-solar {
+    text-shadow: 0 0 25px rgba(255, 69, 0, 0.8), 0 0 50px rgba(255, 204, 0, 0.4);
+  }
+
+  .text-high-contrast {
+    @apply text-white font-medium;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+  }
+}
+
+.cubic-bezier-pop {
+  transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Custom Scrollbar hidden for smooth scroll experience */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
