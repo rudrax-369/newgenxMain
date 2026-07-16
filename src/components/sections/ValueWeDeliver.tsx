@@ -353,7 +353,7 @@ export default function ValueWeDeliver() {
             <img 
               src="/newgenx/value_hero.png" 
               alt="Value We Deliver Vector Illustration" 
-              className="w-full h-auto rounded-[2rem] object-cover mix-blend-lighten md:mix-blend-normal opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+              className="w-full h-auto rounded-[2rem] object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-500 max-h-[350px] md:max-h-[450px]"
             />
           </div>
         </div>

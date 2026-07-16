@@ -142,7 +142,7 @@ export default function HiringSolutions() {
             <img 
               src="/newgenx/hiring_hero.png" 
               alt="Hiring Solutions Vector Illustration" 
-              className="w-full h-auto rounded-[2rem] object-cover mix-blend-lighten md:mix-blend-normal opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+              className="w-full h-auto rounded-[2rem] object-contain opacity-95 group-hover:opacity-100 transition-opacity duration-500 max-h-[350px] md:max-h-[450px]"
             />
           </div>
         </div>
@@ -293,16 +293,16 @@ export default function HiringSolutions() {
             </p>
           </div>
 
-          <div className="timeline-container relative pl-8 md:pl-24 border-l border-white/10 ml-4 md:ml-12 space-y-16">
+          <div className="timeline-container relative pl-6 md:pl-24 border-l border-white/10 ml-0 md:ml-12 space-y-16">
             {/* GSAP driven connecting line */}
             <div className="absolute top-0 left-0 w-[2px] h-full bg-gradient-to-b from-glow-cyan via-glow-gold to-glow-solar" />
 
             {timelineSteps.map((step, idx) => {
-              const Icon = step.icon;
-              return (
-                <div key={idx} className="timeline-item relative group">
-                  {/* Glowing Node Dot */}
-                  <div className="absolute w-5 h-5 rounded-full bg-background border-[3px] border-white/30 -left-[49.5px] md:-left-[105.5px] top-6 group-hover:border-glow-cyan group-hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] transition-all duration-300 z-10" />
+               const Icon = step.icon;
+               return (
+                 <div key={idx} className="timeline-item relative group">
+                   {/* Glowing Node Dot */}
+                   <div className="absolute w-5 h-5 rounded-full bg-background border-[3px] border-white/30 -left-[34px] md:-left-[106px] top-6 group-hover:border-glow-cyan group-hover:shadow-[0_0_20px_rgba(0,240,255,0.6)] transition-all duration-300 z-10" />
                   
                   {/* Timeline Card */}
                   <div className="bg-white/[0.08] border border-white/10 p-8 rounded-[2rem] pop-hover glow-border transition-all duration-300 relative overflow-hidden flex flex-col md:flex-row gap-6 md:gap-8 items-start">

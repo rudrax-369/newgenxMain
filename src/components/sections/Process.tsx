@@ -74,14 +74,14 @@ export default function Process() {
           Projects & Work
         </h2>
         
-        <div className="relative pl-10 md:pl-20 border-l border-white/10 ml-2 md:ml-0 relative z-10">
+        <div className="relative pl-6 md:pl-20 border-l border-white/10 ml-0 relative z-10">
           <div className="process-line absolute top-0 left-0 w-[2px] bg-gradient-to-b from-glow-cyan via-glow-gold to-glow-solar origin-top" />
           
           <div className="flex flex-col gap-10">
             {experiences.map((exp, i) => (
               <div key={i} className="process-step relative group cursor-default">
                 {/* Timeline Dot */}
-                <div className="absolute w-5 h-5 rounded-full bg-background border-[3px] border-white/30 -left-[49.5px] md:-left-[89.5px] top-12 group-hover:border-glow-cyan group-hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300 z-10" />
+                <div className="absolute w-5 h-5 rounded-full bg-background border-[3px] border-white/30 -left-[34px] md:-left-[90px] top-12 group-hover:border-glow-cyan group-hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all duration-300 z-10" />
                 
                 {/* Timeline Content Item */}
                 <div className="bg-white/[0.06] border border-white/10 p-8 md:p-12 rounded-[2rem] pop-hover glow-border transition-all duration-300 relative overflow-hidden group/item">
